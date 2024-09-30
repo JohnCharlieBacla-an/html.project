@@ -1,0 +1,16 @@
+@font-face {
+  font-family: c;
+  src: url(./c.ttf);
+}
+p{
+
+  font-family: c;
+  font-size: xx-large;
+}
+
+body{
+  background-color:aqua;
+}
+img{
+  border: 5px solid black;
+}
