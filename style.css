@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling with Animated Background */
+body {
+    background:rgba(255, 0, 0, 0.8);; /* vibrant gradient */
+    background-size: 200% 200%; /* Makes the gradient dynamic */
+    animation: gradientAnimation 5s ease infinite; /* Animation for background */
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Animation for Background */
+@keyframes gradientAnimation {
+    0% { background-position: 100% 0; }
+    50% { background-position: 0 100%; }
+    100% { background-position: 100% 0; }
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+header nav ul li a:hover {
+    background-color: #ff7845;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Adds a slight grow effect */
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in Animation for the Main Content */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px); /* Adds a lift effect when hovering */
+}
+
+/* Section Headings */
+h1, h2, h3,p {
+    color: #ffed00;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: slideIn 1s ease-out;
+}
+
+/* Slide-In Animation for Titles */
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+/* Paragraphs in Sections */
+section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    color: #dcdcdc;
+}
+
+/* Images in Sections */
+section img {
+    width: 100%;
+    max-width: 900px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Images */
+section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+button, a.button {
+    display: inline-block;
+    background: #ff7845;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover, a.button:hover {
+    background-color: #ffed00;
+    transform: translateY(-5px); /* Button hover effect */
+}
+
+a.button {
+    display: inline-block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Glow Text */
+h1, h2, h3 {
+    text-shadow: 0 0 10px #ff7845, 0 0 20px #ff7845; /* Glowing effect */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    .intro p {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    button, a.button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+.mp{
+
+    width: 400px;
+    height: 300px;
+    margin-left: 350px;
+    opacity: 30%;
+}
+.p{
+    font-style: inherit;
+    font-size: xx-large;
+    color: #ffed00;
+}
+
+.mp:hover{
+
+    opacity: 100%;
+    width: 400px;
+    height: 300px;
+    margin-left: 350px;
+}
+.br{
+    width: 400px;
+    height: 300px;
+    margin-left: 350px;
+    opacity: 30%;
+
+}
+.br:hover{
+    opacity: 100%;
+    width: 400px;
+    height: 300px;
+    margin-left: 350px;
+
+}
+.sombi{
+
+    width: 400px;
+    height: 300px;
+    margin-left: 350px;
+    opacity: 30%;
+
+
+}
+.sombi:hover{
+
+opacity: 100%;
+    width: 400px;
+    height: 300px;
+    margin-left: 350px;
+
+}
